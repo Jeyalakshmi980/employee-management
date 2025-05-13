@@ -7,7 +7,7 @@ import lombok.Data;
 @Data
 public class EmployeeRequest {
     @NotBlank
-    private String name;
+    private String employeename;
 
     @NotBlank
     private String department;
@@ -15,12 +15,12 @@ public class EmployeeRequest {
     @Min(3000)
     private double salary;
 
-    public String getName() {
-        return name;
+    public String getEmployeeName() {
+        return employeename;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setEmployeeName(String employeename) {
+        this.employeename = employeename;
     }
 
     public double getSalary() {

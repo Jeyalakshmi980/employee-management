@@ -16,7 +16,7 @@ public class EmployeeService {
 
     public Employee create(EmployeeRequest request) {
         Employee employee = Employee.builder()
-                .name(request.getName())
+                .employeename(request.getEmployeeName())
                 .department(request.getDepartment())
                 .salary(request.getSalary())
                 .build();

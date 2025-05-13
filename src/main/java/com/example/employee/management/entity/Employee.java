@@ -13,7 +13,7 @@ public class Employee {
     @Id
     private String id;
 
-    private String name;
+    private String employeename;
     private String department;
     private double salary;
 
@@ -25,12 +25,12 @@ public class Employee {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getEmployeeName() {
+        return employeename;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setEmployeeName(String employeename) {
+        this.employeename = employeename;
     }
 
     public String getDepartment() {
