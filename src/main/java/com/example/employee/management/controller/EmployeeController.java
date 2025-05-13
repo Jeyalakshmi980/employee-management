@@ -27,7 +27,7 @@ public class EmployeeController {
     }
 
     @GetMapping("/department/{dept}")
-    public List<Employee> byDepartment(@PathVariable String dept) {
+    public List<Employee> getByDepartment(@PathVariable("dept") String dept) {
         return employeeService.findByDepartment(dept);
     }
 
